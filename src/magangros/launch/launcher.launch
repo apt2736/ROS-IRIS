@@ -1,0 +1,4 @@
+<launch>
+    <node name="publisher" pkg="magangros" type="publisher" output="screen"/>
+    <node name="subscriber" pkg="magangros" type="subscriber" output="screen"/>
+</launch>

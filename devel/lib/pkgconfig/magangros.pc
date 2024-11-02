@@ -1,0 +1,8 @@
+prefix=/home/apt2736/magangIRIS24/devel
+
+Name: magangros
+Description: Description of magangros
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
