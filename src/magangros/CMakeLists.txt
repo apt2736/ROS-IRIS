@@ -136,8 +136,6 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(publisher src/publisher.cpp)
-add_executable(subscriber src/subscriber.cpp)
 add_executable(robot_run src/robot_run.cpp)
 add_executable(robot_nama src/robot_nama.cpp)
 
@@ -152,8 +150,6 @@ add_executable(robot_nama src/robot_nama.cpp)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(publisher ${catkin_LIBRARIES})
-target_link_libraries(subscriber ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 target_link_libraries(robot_run ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 target_link_libraries(robot_nama ${catkin_LIBRARIES})
 
